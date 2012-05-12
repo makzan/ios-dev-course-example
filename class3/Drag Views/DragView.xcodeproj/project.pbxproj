@@ -1,0 +1,280 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E640BE8155D339F000210EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E640BE7155D339F000210EF /* UIKit.framework */; };
+		3E640BEA155D339F000210EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E640BE9155D339F000210EF /* Foundation.framework */; };
+		3E640BEC155D339F000210EF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E640BEB155D339F000210EF /* CoreGraphics.framework */; };
+		3E640BF2155D339F000210EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E640BF0155D339F000210EF /* InfoPlist.strings */; };
+		3E640BF4155D339F000210EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E640BF3155D339F000210EF /* main.m */; };
+		3E640BF8155D339F000210EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E640BF7155D339F000210EF /* AppDelegate.m */; };
+		3E640BFB155D339F000210EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E640BFA155D339F000210EF /* ViewController.m */; };
+		3E640BFE155D339F000210EF /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E640BFC155D339F000210EF /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3E640BE3155D339F000210EF /* DragView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E640BE7155D339F000210EF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3E640BE9155D339F000210EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3E640BEB155D339F000210EF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3E640BEF155D339F000210EF /* DragView-Info.plist */ = {isa = PBXFileReference; path = "DragView-Info.plist"; sourceTree = "<group>"; };
+		3E640BF1155D339F000210EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3E640BF3155D339F000210EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3E640BF5155D339F000210EF /* DragView-Prefix.pch */ = {isa = PBXFileReference; path = "DragView-Prefix.pch"; sourceTree = "<group>"; };
+		3E640BF6155D339F000210EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3E640BF7155D339F000210EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3E640BF9155D339F000210EF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3E640BFA155D339F000210EF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3E640BFD155D339F000210EF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E640BE0155D339F000210EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E640BE8155D339F000210EF /* UIKit.framework in Frameworks */,
+				3E640BEA155D339F000210EF /* Foundation.framework in Frameworks */,
+				3E640BEC155D339F000210EF /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E640BD8155D339F000210EF = {
+			isa = PBXGroup;
+			children = (
+				3E640BED155D339F000210EF /* Touches */,
+				3E640BE6155D339F000210EF /* Frameworks */,
+				3E640BE4155D339F000210EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3E640BE4155D339F000210EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E640BE3155D339F000210EF /* DragView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E640BE6155D339F000210EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E640BE7155D339F000210EF /* UIKit.framework */,
+				3E640BE9155D339F000210EF /* Foundation.framework */,
+				3E640BEB155D339F000210EF /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E640BED155D339F000210EF /* Touches */ = {
+			isa = PBXGroup;
+			children = (
+				3E640BF6155D339F000210EF /* AppDelegate.h */,
+				3E640BF7155D339F000210EF /* AppDelegate.m */,
+				3E640BF9155D339F000210EF /* ViewController.h */,
+				3E640BFA155D339F000210EF /* ViewController.m */,
+				3E640BFC155D339F000210EF /* ViewController.xib */,
+				3E640BEE155D339F000210EF /* Supporting Files */,
+			);
+			path = Touches;
+			sourceTree = "<group>";
+		};
+		3E640BEE155D339F000210EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E640BEF155D339F000210EF /* DragView-Info.plist */,
+				3E640BF0155D339F000210EF /* InfoPlist.strings */,
+				3E640BF3155D339F000210EF /* main.m */,
+				3E640BF5155D339F000210EF /* DragView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E640BE2155D339F000210EF /* DragView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E640C01155D339F000210EF /* Build configuration list for PBXNativeTarget "DragView" */;
+			buildPhases = (
+				3E640BDF155D339F000210EF /* Sources */,
+				3E640BE0155D339F000210EF /* Frameworks */,
+				3E640BE1155D339F000210EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DragView;
+			productName = Touches;
+			productReference = 3E640BE3155D339F000210EF /* DragView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E640BDA155D339F000210EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 3E640BDD155D339F000210EF /* Build configuration list for PBXProject "DragView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3E640BD8155D339F000210EF;
+			productRefGroup = 3E640BE4155D339F000210EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E640BE2155D339F000210EF /* DragView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E640BE1155D339F000210EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E640BF2155D339F000210EF /* InfoPlist.strings in Resources */,
+				3E640BFE155D339F000210EF /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E640BDF155D339F000210EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E640BF4155D339F000210EF /* main.m in Sources */,
+				3E640BF8155D339F000210EF /* AppDelegate.m in Sources */,
+				3E640BFB155D339F000210EF /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3E640BF0155D339F000210EF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E640BF1155D339F000210EF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3E640BFC155D339F000210EF /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E640BFD155D339F000210EF /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E640BFF155D339F000210EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3E640C00155D339F000210EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E640C02155D339F000210EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Touches/DragView-Prefix.pch";
+				INFOPLIST_FILE = "Touches/DragView-Info.plist";
+				PRODUCT_NAME = DragView;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3E640C03155D339F000210EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Touches/DragView-Prefix.pch";
+				INFOPLIST_FILE = "Touches/DragView-Info.plist";
+				PRODUCT_NAME = DragView;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E640BDD155D339F000210EF /* Build configuration list for PBXProject "DragView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E640BFF155D339F000210EF /* Debug */,
+				3E640C00155D339F000210EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E640C01155D339F000210EF /* Build configuration list for PBXNativeTarget "DragView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E640C02155D339F000210EF /* Debug */,
+				3E640C03155D339F000210EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E640BDA155D339F000210EF /* Project object */;
+}
