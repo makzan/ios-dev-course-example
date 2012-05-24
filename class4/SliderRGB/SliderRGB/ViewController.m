@@ -57,7 +57,10 @@
 
 - (void)refreshPreviewBox
 {
-    rgbPreviewBox.backgroundColor = [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:1];
+    rgbPreviewBox.backgroundColor = [UIColor colorWithRed:r/255.0f 
+                                                    green:g/255.0f 
+                                                     blue:b/255.0f 
+                                                    alpha:1];
 }
 
 - (void)refreshHexLabel
