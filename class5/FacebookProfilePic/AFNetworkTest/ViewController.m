@@ -29,7 +29,9 @@
     [networkImageView setImageWithURL:imageURL placeholderImage:[UIImage imageNamed:@"loading.png"]];
     
     NSURL *url = [NSURL URLWithString:@"http://graph.facebook.com/makzan"];
+    
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
         NSLog(@"Result: %@", JSON);
         nameLabel.text = [JSON objectForKey:@"name"];

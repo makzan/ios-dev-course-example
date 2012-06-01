@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 @property (retain, nonatomic) IBOutlet UIImageView *networkImageView;
+@property (retain, nonatomic) IBOutlet UILabel *nameLabel;
 
+@property (retain, nonatomic) IBOutlet UIScrollView *scrollview;
 
 @end
