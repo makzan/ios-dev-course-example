@@ -84,13 +84,23 @@
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
 {
-    // reuse any not-using Pin View with identifier "greenPin"
-    MKAnnotationView *pinView = [mapView dequeueReusableAnnotationViewWithIdentifier:@"greenPin"];
+    // we know if it is showing normal coordinate or current location's coordinate.
+    BOOL isCurrentLocation = [(Pin*)annotation isCurrentLocationMark];
+    
+    // prepare two different identifier according to the coordinate type
+    NSString *identifier = @"current location";
+    if (!isCurrentLocation)
+    {
+        identifier = @"normal pin";
+    }
+    
+    // reuse any not-using Pin View with identifier
+    MKAnnotationView *pinView = [mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
     
     // we are running out of pinView and need to create one, if pinView is nil after we dequeue one.
     if (pinView == nil)
     {
-        pinView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"greenPin"];
+        pinView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
     }
     
     // we will not use custom image on current location.
