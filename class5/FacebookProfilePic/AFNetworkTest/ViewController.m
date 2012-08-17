@@ -56,9 +56,4 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
-- (void)dealloc {
-    [networkImageView release];
-    [nameLabel release];
-    [super dealloc];
-}
 @end

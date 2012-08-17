@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-@property (retain, nonatomic) IBOutlet UIImageView *networkImageView;
-@property (retain, nonatomic) IBOutlet UILabel *nameLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *networkImageView;
+@property (strong, nonatomic) IBOutlet UILabel *nameLabel;
 
 @end

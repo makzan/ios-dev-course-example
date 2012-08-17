@@ -51,8 +51,4 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
-- (void)dealloc {
-    [scrollview release];
-    [super dealloc];
-}
 @end
