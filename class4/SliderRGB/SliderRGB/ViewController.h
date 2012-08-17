@@ -17,5 +17,26 @@
 - (IBAction)sliderRChanged:(id)sender;
 - (IBAction)sliderGChanged:(id)sender;
 - (IBAction)sliderBChanged:(id)sender;
+- (IBAction)sliderChanged:(id)sender;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end

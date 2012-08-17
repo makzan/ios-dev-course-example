@@ -49,9 +49,9 @@
 
 - (void)refreshPreviewBox
 {
-    rgbPreviewBox.backgroundColor = [UIColor colorWithRed:r/255.0f 
-                                                    green:g/255.0f 
-                                                     blue:b/255.0f 
+    rgbPreviewBox.backgroundColor = [UIColor colorWithRed:r/255.0f
+                                                    green:g/255.0f
+                                                     blue:b/255.0f
                                                     alpha:1];
 }
 
@@ -70,26 +70,61 @@
     }
 }
 
-- (IBAction)sliderRChanged:(id)sender {
-    r = [(UISlider*)sender value];    
-    labelR.text = [NSString stringWithFormat:@"%.0f", r];
+
+- (IBAction)sliderChanged:(UISlider*)sender {
+    NSLog(@"tag: %d", sender.tag);
+    float value = sender.value;
+    switch (sender.tag) {
+        case 0:
+            labelR.text = [NSString stringWithFormat:@"%.0f", value];
+            r = value;
+            break;
+        case 1:
+            labelG.text = [NSString stringWithFormat:@"%.0f", value];
+            g = value;
+            break;
+        case 2:
+            labelB.text = [NSString stringWithFormat:@"%.0f", value];
+            b = value;
+            break;
+            
+        default:
+            break;
+    }
+    
     [self refreshPreviewBox];
     [self refreshHexLabel];
 }
 
-- (IBAction)sliderGChanged:(id)sender {
-    g = [(UISlider*)sender value];
-    labelG.text = [NSString stringWithFormat:@"%.0f", g];
-    [self refreshPreviewBox];
-    [self refreshHexLabel];
-}
 
-- (IBAction)sliderBChanged:(id)sender {
-    b = [(UISlider*)sender value];
-    labelB.text = [NSString stringWithFormat:@"%.0f", b];
-    [self refreshPreviewBox];
-    [self refreshHexLabel];
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
