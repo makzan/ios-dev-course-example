@@ -26,7 +26,7 @@
     CLLocationManager *locationManager = [[CLLocationManager alloc] init];
     locationManager.delegate = self;
     [locationManager startUpdatingLocation];
-    
+
     // we use CLLocationCoordinate2D to store a coordinate.
     CLLocationCoordinate2D location = CLLocationCoordinate2DMake(22.191856, 113.543186);
     
@@ -141,7 +141,7 @@
 	didUpdateToLocation:(CLLocation *)newLocation
            fromLocation:(CLLocation *)oldLocation
 {
-    mapView.centerCoordinate = newLocation.coordinate;
+//    mapView.centerCoordinate = newLocation.coordinate;
     
     Pin *pin = [[Pin alloc] init];
     pin.coordinate = newLocation.coordinate;
@@ -152,8 +152,24 @@
     
     [mapView addAnnotation:pin];
     
+    
+    [newLocation distanceFromLocation: oldLocation];
+    
+    
     [pin release];
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @end
