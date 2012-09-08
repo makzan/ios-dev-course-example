@@ -11,11 +11,12 @@
 #import "Pin.h"
 
 @interface ViewController ()
-
+@property (nonatomic, strong) CLLocationManager *locationManager;
 @end
 
 @implementation ViewController
 @synthesize mapView;
+@synthesize locationManager = _locationManager;
 
 - (void)viewDidLoad
 {
@@ -23,9 +24,9 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     // listen to the current location
-    CLLocationManager *locationManager = [[CLLocationManager alloc] init];
-    locationManager.delegate = self;
-    [locationManager startUpdatingLocation];
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.delegate = self;
+    [self.locationManager startUpdatingLocation];
     
     // we use CLLocationCoordinate2D to store a coordinate.
     CLLocationCoordinate2D location = CLLocationCoordinate2DMake(22.191856, 113.543186);
